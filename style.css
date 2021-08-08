@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9fafc;
+    color: #69696a;
+    font-family: open sans;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 0;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    margin: 2px;
+    color: #69696a;
+    font-family: open sans;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+p {
+    display: block;
+    align-items: center;
+    border-left: 5px solid #69696a;
+    margin: 13px 0;
+    padding: 0 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(247, 193, 162, 0.7);
+    align-items: center;
+    padding: 0 1rem;
+}
+
+nav li {
+    list-style-type: none;
+    padding: .2rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+    a {
+        margin: 5px;
+    }
+    p {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+    main {
+        margin: 6rem 0 0 0;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav li {
+        display: flex;
+        flex-direction: row;
+        margin: 0 5px;
+    }
+    .hire {
+        width: auto;
+    }
+    button {
+        width: 50%;
+    }
+    .dot1 {
+        height: 200px;
+        width: 200px;
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        position: fixed;
+        right: 13%;
+        transform: translateY(-120%);
+    }
+    .dot2 {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        display: inline-block;
+        position: fixed;
+        right: 7%;
+        transform: translateY(-87%);
+    }
+    .dot3 {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        display: inline-block;
+        position: fixed;
+        right: 8%;
+        transform: translateY(-197%);
+    }
+}
